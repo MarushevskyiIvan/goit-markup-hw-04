@@ -191,6 +191,12 @@ img {
 
 .hero-section {
   background-color: var(--background-grey-color);
+  
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bgr.jpg);
+  
+ 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-titel {
@@ -264,6 +270,21 @@ img {
   width: 264px;
 }
 
+.advant-item::before{
+  content: '';
+  display: inline-block;
+
+  height: 112px;
+  width: 264px;
+
+  background: #F4F4FD;
+  border-radius: 4px;
+
+  margin-bottom: 8px;
+  background-image: url(../images/icons.svg/section-icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: center ;
+}
 /* _______________Our Works________________ */
 .work-section {
   padding-top: 0;
@@ -316,6 +337,8 @@ img {
   text-align: center;
   padding: 32px 16px;
 }
+
+
 
 /* _______________Footer________________ */
 
@@ -404,6 +427,12 @@ img {
   width: 360px;
   height: 420px;
 }
+
+.portfolio-item:hover{
+  border: 1px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
